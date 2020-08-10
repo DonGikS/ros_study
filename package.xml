@@ -1,13 +1,10 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>ros_cpp_study_pkg</name>
-  <version>0.0.0</version>
-  <description>The ros_cpp_study_pkg package</description>
+  <version>0.0.1</version>
+  <description>a mobile platform trace robot study package</description>
 
-  <!-- One maintainer tag required, multiple allowed, one person per tag -->
-  <!-- Example:  -->
-  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="kignod@todo.todo">kignod</maintainer>
+  <maintainer email="ikspurt0505@gmail.com">DonGikS</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
@@ -21,12 +18,7 @@
   <!-- Example: -->
   <!-- <url type="website">http://wiki.ros.org/ros_cpp_study_pkg</url> -->
 
-
-  <!-- Author tags are optional, multiple are allowed, one per tag -->
-  <!-- Authors do not have to be maintainers, but could be -->
-  <!-- Example: -->
-  <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
-
+  <author email="ikspurt0505@gmail.com">DonGikS</author>
 
   <!-- The *depend tags are used to specify dependencies -->
   <!-- Dependencies can be catkin packages or system dependencies -->
