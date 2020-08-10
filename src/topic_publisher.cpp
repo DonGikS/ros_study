@@ -28,7 +28,7 @@ int main(int argc, char **argv){                //Node main().
 
         loop_rate.sleep();                      //into sleep as setting loop period
 
-        ++count;                                //count up
+        ++count;                                //count
     }
     return 0;
 }

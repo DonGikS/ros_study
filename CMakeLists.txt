@@ -213,3 +213,7 @@ target_link_libraries(hello_world_node ${catkin_LIBRARIES})
 add_executable(topic_publisher src/topic_publisher.cpp)
 add_dependencies(topic_publisher ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(topic_publisher ${catkin_LIBRARIES})
+
+add_executable(topic_subscriber src/topic_subscriber.cpp)
+add_dependencies(topic_subscriber ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(topic_subscriber ${catkin_LIBRARIES})
