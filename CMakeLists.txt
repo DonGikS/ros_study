@@ -227,3 +227,7 @@ target_link_libraries(service_client ${catkin_LIBRARIES})
 add_executable(action_server src/action_server.cpp)
 add_dependencies(action_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(action_server ${catkin_LIBRARIES})
+
+add_executable(action_client src/action_client.cpp)
+add_dependencies(action_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(action_client ${catkin_LIBRARIES})
