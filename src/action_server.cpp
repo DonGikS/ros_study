@@ -35,6 +35,7 @@ public:
         for(int i = 1; i<=goal->order; i++){
             if(as_.isPreemptRequested() || !ros::ok()){
                 ROS_INFO("%s:Preempted", action_name_.c_str());
+                as_.setPreempted();
                 success = false;
                 break;
             }
