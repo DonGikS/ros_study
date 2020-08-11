@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>ros_cpp_study_pkg</name>
-  <version>0.0.1</version>
+  <version>0.0.3</version>
   <description>a mobile platform trace robot study package</description>
 
   <maintainer email="ikspurt0505@gmail.com">DonGikS</maintainer>

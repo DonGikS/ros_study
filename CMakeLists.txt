@@ -46,12 +46,7 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
-## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+
 add_message_files(
   FILES 
   MsgTutorial.msg
@@ -62,6 +57,11 @@ add_message_files(
 #   Service1.srv
 #   Service2.srv
 # )
+## Service declare(SrvTutorial.srv)
+add_service_files(
+  FILES
+  SrvTutorial.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -210,10 +210,22 @@ include_directories(
 add_executable(hello_world_node src/hello_world_node.cpp)
 target_link_libraries(hello_world_node ${catkin_LIBRARIES})
 
+##Publisher Node
 add_executable(topic_publisher src/topic_publisher.cpp)
 add_dependencies(topic_publisher ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(topic_publisher ${catkin_LIBRARIES})
 
+##Subscriber Node
 add_executable(topic_subscriber src/topic_subscriber.cpp)
 add_dependencies(topic_subscriber ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(topic_subscriber ${catkin_LIBRARIES})
+
+##Service_server Node 
+##executable file, target_link, add_dependencies needed
+add_executable(service_server src/service_server.cpp)
+add_dependencies(service_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(service_server ${catkin_LIBRARIES})
+
+add_executable(service_client src/service_client.cpp)
+add_dependencies(service_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(service_client ${catkin_LIBRARIES})
