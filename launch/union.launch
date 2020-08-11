@@ -1,0 +1,12 @@
+<launch>
+   <group ns="ns1">
+      <node pkg="ros_cpp_study_pkg" type="topic_publisher" name="topic_publisher1"/>
+      <node pkg="ros_cpp_study_pkg" type="topic_subscriber" name="topic_subscriber1"/>
+   </group>
+   <group ns="ns2">
+      <node pkg="ros_cpp_study_pkg" type="topic_publisher" name="topic_publisher2"/>
+      <node pkg="ros_cpp_study_pkg" type="topic_subscriber" name="topic_subscriber2"/>
+   </group>
+   <arg name="update_period" default="0"/>
+   <param name="timing" value="$(arg update_period)"/>
+</launch>
